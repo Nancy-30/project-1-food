@@ -1,0 +1,87 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* ultility classes */
+/*to remove overlapping */
+.img_resposive{
+    max-width:100%;
+    border-radius: 20%;
+}
+
+.hero_image{
+    background:url(heroimage.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height:100vh;
+    position: relative;
+}
+.hero_wrapper{
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.hero_wrapper h1{
+    font-style: italic;
+    text-align: center;
+}
+.form_code{
+    text-align: center;
+}
+.form_code .post_code{
+    display: block;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:2rem;
+    padding:.6rem;
+    border:none;
+    outline:none;
+}
+.hero_image span{
+    margin-left: 5rem;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.form_code button{
+    width:40%;
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:#00bab1 ;
+    color:white;
+    padding: .3rem;
+    margin-top:.7rem;
+    margin:1rem auto 0rem;
+    border-radius: .3rem;
+    border:none;
+}
+.form_code button:hover{
+    box-shadow: 10px 5px 5px grey;
+}
+
+/* product section */
+.product{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product_list_item{
+    float:left;
+    width:32%;
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+.product_list_item:first-of-type{
+    margin-left:0;
+}
+/* making site responsive */
+@media screen and(max-width:700px) {
+    .product_list_item{
+        width:100%;
+        float:none;
+    }
+}
