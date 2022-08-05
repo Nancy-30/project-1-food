@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .flexx{
+            padding:0;
+            margin:0;
+            list-style: none;
+            height: 200px;
+            display: flex;
+        }
+        .i{
+            background-color: tomato;
+            padding:5px;
+            width:100px;
+            margin:5px;
+            line-height: 100px;
+            color:white;
+            text-align: center;
+        }
+        .i-1{
+            align-self: center;
+        }
+        .i-2{
+            align-self:flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class = "flexx">
+        <p class = "i-1 i">1</p>
+        <p class = "i-2 i">2</p>
+        <p class = "i-3 i">3</p>
+        <p class = "i-4 i">4</p>
+    </div>
+</body>
+</html>
